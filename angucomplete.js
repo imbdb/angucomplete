@@ -102,6 +102,13 @@ angular.module('angucomplete', [] )
 
                 } else {
                     $scope.results = [];
+                    $scope.selectedObject = {
+                            title: $scope.searchStr,
+                            description: "",
+                            image: "",
+                            originalObject: {}
+                        };
+                     $scope.showDropdown = false;
                 }
             }
 
